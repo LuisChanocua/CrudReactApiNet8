@@ -1,0 +1,6 @@
+@CruedReactApiNet8_HostAddress = http://localhost:5219
+
+GET {{CruedReactApiNet8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
