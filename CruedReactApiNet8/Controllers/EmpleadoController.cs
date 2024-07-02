@@ -41,7 +41,7 @@ namespace CruedReactApiNet8.Controllers
 
         //GetEmpleado
         [HttpGet]
-        [Route("empleado/{idempleado:int}")]
+        [Route("empleado/{idEmpleado:int}")]
         public async Task<ActionResult> getEmpleado(int idEmpleado)
         {
             try
@@ -94,7 +94,7 @@ namespace CruedReactApiNet8.Controllers
 
         #region PUT
         //PutEmpleado: Actualizar usuario
-        [HttpGet]
+        [HttpPut]
         [Route("editarempleado")]
         public async Task<ActionResult> actualizarEmpleado([FromBody] Empleado empleadoData)
         {
@@ -124,7 +124,7 @@ namespace CruedReactApiNet8.Controllers
         #region DELETE
         //DeleteEmpleado: Eliminar usuario
         [HttpDelete]
-        [Route("deleteempleado/{idempleado:int}")]
+        [Route("deleteempleado/{idEmpleado:int}")]
         public async Task<ActionResult> deleteEmpleado(int idEmpleado)
         {
             try
